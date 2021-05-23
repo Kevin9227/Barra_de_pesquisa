@@ -13,13 +13,17 @@
         <div class="entrar">
             <input type="text" name="" id="mbusca" placeholder="Buscar">
         </div>
-        <sapn class="limpar"></sapn>
+        <sapn class="limpar" id="lmpa"></sapn>
     </div>
     <script>
         const icone = document.querySelector('.icone');
         const barra = document.querySelector('.busca');
+        const lmp = document.querySelector('.lmpa');
         icone.onclick = function(){
             barra.classList.toggle('active')
+        }
+        lmp.onclick = function(){
+            barra.classList.toggle('busca');
         }
     </script>
 </body>
