@@ -83,7 +83,7 @@ body{
     width: 15px;
     height: 15px;
     right: 15px;
-    background: #ff0;
+   /*  background: #ff0; */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -96,4 +96,12 @@ body{
     height: 15px;
     background: #999;
     transform: rotate(45deg);
+}
+.limpar::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(-45deg);
 }
